@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 
-mongoose.connect('mongodb+srv://vivek_bhatt:Vivek@2002@cluster0-vatbg.mongodb.net/registrationFormHeruko?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://vivek_bhatt:Vivek@2002@cluster0-vatbg.mongodb.net/newdb?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, (err) => {
@@ -18,17 +18,6 @@ mongoose.connect('mongodb+srv://vivek_bhatt:Vivek@2002@cluster0-vatbg.mongodb.ne
     console.log('Error in DB connection : ' + err);
   }
 });
-
-// mongoose.connect('mongodb://localhost:27017/newdb', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// }, (err) => {
-//   if (!err) {
-//     console.log('MongoDB Connection Succeeded.');
-//   } else {
-//     console.log('Error in DB connection : ' + err);
-//   }
-// });
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
