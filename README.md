@@ -14,6 +14,8 @@ This is a Simple User Registration & Login systems app done with Node.js Framewo
 
 ## Getting Started
 
+App is running on +https://vivek-xenonstack.herokuapp.com/
+
 ## Running the tests
 
 ### •Registration Form:
