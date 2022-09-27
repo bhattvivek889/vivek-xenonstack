@@ -14,9 +14,6 @@ This is a Simple User Registration & Login systems app done with Node.js Framewo
 
 ## Getting Started
 
-### Deployment
-This Project is **[Live](https://reg-login-using-nodejs-mongodb.herokuapp.com/)** on: 🌍 **https://reg-login-using-nodejs-mongodb.herokuapp.com/**
-
 ## Running the tests
 
 ### •Registration Form:
