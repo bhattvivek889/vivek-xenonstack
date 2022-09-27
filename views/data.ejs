@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div>
+		<div>
+			<!-- <center>
+				<table class="table table-hover text-center">
+					<tr><td>Name </td><td><%= name %></td></tr>
+					<tr><td>Email </td><td><%= email %></td></tr>
+				</table>
+			</center> -->
+			<nav class="navbar navbar-default">
+				<div class="container">
+				  <div class="navbar-header">
+					<p class="navbar-brand">LAPTOP STORE</p>
+				  </div>
+					<ul class="nav navbar-nav navbar-right">
+					  <li id="home"><a href="/">HOME</a></li>
+					  <li id="about"><a href="/about">ABOUT US</a></li>
+					  <li id="contact"><a href="/contact">CONTACT US</a></li>
+					  <li id="logout"><a href="/logout">LOGOUT</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="Carddiv">
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/acer-aspire-3-dual-core-3020e-4-gb-256-gb-ssd-windows-11-home-a314-22-laptop/p/itm07e718a865608?pid=COMGBNUMF8CDJZFH&lid=LSTCOMGBNUMF8CDJZFHVNFSHE&marketplace=FLIPKART&q=acer+aspire+3&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_61z9b04kXKxS4eqgAKXX8t27L8Vjcr%2FonmhkzBGCpbETHPCTwv0VTrOIpnSS4HNUFXuZ9FCqywavLb%2B8qN9sag%3D%3D&ppt=hp&ppn=homepage&ssid=j3t2q87j280000001664271555120&qH=8ae8f07d039c1c35" target="_blank">
+						<img class="cardimg" src="https://m.media-amazon.com/images/I/715ht-tvp1S._SL1500_.jpg" alt="acer aspire 3"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">Acer</p>
+							</div>
+							<h1 class="card-h1">Acer Aspire 3</h1>
+							<p class="card-des">&#8377;34,999</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/asus-vivobook-15-2022-core-i3-10th-gen-8-gb-512-gb-ssd-windows-11-home-x515ja-ej362ws-x515ja-ej392ws-thin-light-laptop/p/itmae4a34193296d?pid=COMG87FFPEDAAGXW&lid=LSTCOMG87FFPEDAAGXWTMCIPI&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_3&otracker=AS_Query_HistoryAutoSuggest_2_0&otracker1=AS_Query_HistoryAutoSuggest_2_0&iid=888bab91-f332-4fd6-9de7-3ee659014582.COMG87FFPEDAAGXW.SEARCH&ssid=t1fn5b8zb40000001664272767699&qH=312f91285e048e09" target="_blank">
+						<img class="cardimg" src="https://m.media-amazon.com/images/I/81mZ4eDWYkL.jpg" alt="asus vivobook 15"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">Asus</p>
+							</div>
+							<h1 class="card-h1">Asus Vivobook 15</h1>
+							<p class="card-des">&#8377;28,890</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/asus-tuf-gaming-f15-core-i5-10th-gen-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-gtx-1650-144-hz-fx506lhb-hn358w-laptop/p/itm4d930ab779cbd?pid=COMGF9Z7JYCFBKAP&lid=LSTCOMGF9Z7JYCFBKAPXYET0O&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_Query_HistoryAutoSuggest_2_0&otracker1=AS_Query_HistoryAutoSuggest_2_0&iid=888bab91-f332-4fd6-9de7-3ee659014582.COMGF9Z7JYCFBKAP.SEARCH&ssid=t1fn5b8zb40000001664272767699&qH=312f91285e048e09" target="_blank">
+						<img class="cardimg" src="data:image/jpeg;base64,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" alt="acer aspire 3"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">Asus</p>
+							</div>
+							<h1 class="card-h1">Asus TUF Gaming</h1>
+							<p class="card-des">&#8377;47,890</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/lenovo-ideapad-3-core-i3-11th-gen-8-gb-512-gb-ssd-windows-11-home-82h801l7in-82h802fjin-82h802l3in-82h801lhin-thin-light-laptop/p/itm0e009f57a591b?pid=COMG9VHHG6Q3RRJX&lid=LSTCOMG9VHHG6Q3RRJXQHPK6Q&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_Query_HistoryAutoSuggest_2_0&otracker1=AS_Query_HistoryAutoSuggest_2_0&iid=888bab91-f332-4fd6-9de7-3ee659014582.COMG9VHHG6Q3RRJX.SEARCH&ssid=t1fn5b8zb40000001664272767699&qH=312f91285e048e09" target="_blank">
+						<img class="cardimg" src="https://m.media-amazon.com/images/I/619wdC9vcCL._SY450_.jpg" alt="acer aspire 3"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">Lenovo</p>
+							</div>
+							<h1 class="card-h1">Lenovo IdeaPad 3</h1>
+							<p class="card-des">&#8377;34,890</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/hp-pavilion-ryzen-5-hexa-core-amd-r5-5600h-8-gb-512-gb-ssd-windows-10-4-graphics-nvidia-geforce-gtx-1650-144-hz-15-ec2004ax-gaming-laptop/p/itm98c94bbf9bc20?pid=COMG5GZXPWMGTNWS&lid=LSTCOMG5GZXPWMGTNWSQE9WVW&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_7&otracker=AS_Query_HistoryAutoSuggest_2_0&otracker1=AS_Query_HistoryAutoSuggest_2_0&iid=888bab91-f332-4fd6-9de7-3ee659014582.COMG5GZXPWMGTNWS.SEARCH&ssid=t1fn5b8zb40000001664272767699&qH=312f91285e048e09" target="_blank">
+						<img class="cardimg" src="https://m.media-amazon.com/images/I/71VlaIUD10L._SL1500_.jpg" alt="acer aspire 3"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">HP </p>
+							</div>
+							<h1 class="card-h1">HP Pavilion Ryzen 5</h1>
+							<p class="card-des">&#8377;49,999</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="Card">
+					<a class="carda" href="https://www.flipkart.com/hp-omen-ryzen-7-octa-core-amd-r7-6800h-16-gb-512-gb-ssd-windows-11-home-8-graphics-amd-radeon-rx-6650m-144-hz-16-n0079ax-gaming-laptop/p/itme9d741398d445?pid=COMGHJ7GDZDG3ZAT&lid=LSTCOMGHJ7GDZDG3ZATTXW9SH&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_20&otracker=AS_Query_HistoryAutoSuggest_2_0&otracker1=AS_Query_HistoryAutoSuggest_2_0&iid=en_srCmka%2BNMmxQaANIIYEDJOnjuKWHVX6QP2N0iDwvJ%2FC5dYNbC7bMu7aE2%2FbHHUnmuh8Yp7nwbxlobWvu4ldHAA%3D%3D&ssid=t1fn5b8zb40000001664272767699&qH=312f91285e048e09" target="_blank">
+						<img class="cardimg" src="https://m.media-amazon.com/images/I/71999J1wmGL._SL1500_.jpg" alt="acer aspire 3"></img>
+						<div class="card-div1">
+							<div class="card-div2">
+								<p class="card-source-p">Flipkart</p>
+								<p class="card-publish-p">HP</p>
+							</div>
+							<h1 class="card-h1">HP Omen Ryzen 7</h1>
+							<p class="card-des">&#8377;99,999</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="footer-padding"></div>
+				<div class="footer">
+					<p>Made with ❤️ by Vivek Bhatt
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

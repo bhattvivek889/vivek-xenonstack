@@ -1,0 +1,149 @@
+/*body,
+ table,
+    thead,
+    tr,
+    tbody,
+    th,
+    td {
+        text-align: center;
+    }*/
+body{
+	text-align: center !important;
+}
+p{
+	margin-top: 20px;
+	font-size: 30px;
+}
+input{
+	text-align: center;
+}
+.mssg{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+/* card */
+
+.Carddiv{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 30px 170px;
+    margin-top:20px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.Card{
+    z-index:100;
+    box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.8);
+    min-width: 354px;
+    padding-bottom: 25px;
+}
+
+.cardimg{
+    width: 100%;
+    height: 250px;
+}
+
+.carda{
+    text-decoration: none;
+    color: black;
+}
+
+.card-source-p{
+    display: inline-block;
+    background: rgba(38,0,128,.226);
+    font-size: 11px;
+    padding: 5px 6px;
+    color: rgba(0,11,43,.534);
+    border-radius: 3px;
+}
+
+.card-publish-p{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 135px;
+}
+
+
+.card-div2{
+    margin: 10px 0px;
+}
+
+.card-div1{
+    margin: 0px 15px;
+}
+
+.card-h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.Card:hover{
+    background-color: rgb(209, 209, 202);
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position:relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.container{
+    width: 100%;
+}
+
+.div-3{
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+
+@media screen and (max-width:1200px){
+    .Carddiv {
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px 0px;
+        width: 354px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:775px){
+    .Carddiv {
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 0px;
+        width: 354px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+
+    <script type="text/javascript">
+		$(document).ready(function(){
+
+			$( "#form2" ).submit(function(event) {
+				event.preventDefault();
+
+				$.ajax({
+					type: 'POST',
+					url: '/',
+					data: $('#form2').serialize(),
+					dataType: "json",
+					success: function(response){
+						//alert("a");
+						//console.log(response.Success);
+						$('#form2')[0].reset();
+
+						document.getElementById("checks").innerHTML=response.Success;
+         					//ADD THIS CODE
+         					setTimeout(function(){
+         						document.getElementById("checks").innerHTML="";
+         					},3000);
+         					if (response.Success=="Successfully submitted your details") {
+         						document.getElementById("bb").click();
+         					};
+         				},
+         				error: function() {
+         				}
+         			})
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div>
+		<div>
+			<div class="div-3">
+				<h1 class="text-center">Contact</h1>
+				<div>
+					<form id="form2" method="post">
+						<input type="text" name="fname" placeholder="First Name" required="" class="form-control"><br/>
+						<input type="text" name="lname" placeholder="Last Name" required="" class="form-control"><br/>
+						<input type="email" name="email" placeholder="Email Address" required="" class="form-control"><br/>
+						<input type="text" name="Phone Number" placeholder="Phone Number" required="" class="form-control"><br/>
+						<input type="text" name="message" placeholder="Message" required="" class="form-control"><br/>
+						<button type="submit" value="Submit" class="btn btn-success"><a  href="/success">Submit</a></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
